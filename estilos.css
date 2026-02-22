@@ -1,0 +1,169 @@
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#buscador {
+    padding: 10px;
+    width: 50%;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.lista {
+    width: 70%;
+    margin: auto;
+}
+
+.nivel {
+    display: flex;
+    background-color: #1c1c1c;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nivel:hover {
+    background-color: #292929;
+    transform: scale(1.02);
+}
+
+.link-nivel {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.posicion {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+    color: red;
+}
+
+.nivel img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.info {
+    text-align: left;
+}
+
+.detalle img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #222;
+}
+
+.footer a {
+    color: #4b9fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: rgb(188, 213, 245);
+}
+
+/* BOTÓN SUPERIOR */
+.info-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.info-btn:hover {
+    background-color: red;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: left;
+    animation: aparecer 0.3s ease;
+}
+
+.cerrar {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.cerrar:hover {
+    color: red;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+
+#video{
+    size: 30px;
+}
